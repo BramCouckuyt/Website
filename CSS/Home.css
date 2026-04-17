@@ -1,0 +1,177 @@
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Products grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+/* Hero */
+.hero {
+    background-image: url('../Images/Hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #faf8f5;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+
+.hero-content .button {
+    background-color: #faf8f5;
+    color: #2c2c2c;
+}
+
+.hero-content .button:hover {
+    background-color: #b0a090;
+    color: #faf8f5;
+}
+
+/* Brand story */
+.brand-story {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    gap: 60px;
+}
+
+.brand-story-image {
+    width: 420px;
+    height: 500px;
+    flex-shrink: 0;
+    background-color: #ede9e3;
+    background-image: url('../Images/Product/product1_1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.brand-story-text {
+    flex: 1;
+}
+
+.brand-story-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.brand-story-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+/* Instagram strip */
+.instagram {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f5f2ee;
+}
+
+.instagram h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.instagram p {
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    max-width: 900px;
+    margin: 0 auto 32px;
+}
+
+.instagram-item {
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand-story {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .brand-story-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

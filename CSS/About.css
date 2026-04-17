@@ -1,0 +1,158 @@
+/* About hero */
+.about-hero {
+    background-image: url('../Images/Hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-content h2 {
+    font-size: 36px;
+    color: #faf8f5;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.about-hero-content p {
+    font-size: 14px;
+    color: #d4c8bc;
+    letter-spacing: 2px;
+}
+
+/* About wrapper */
+.about-wrapper {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* Story section */
+.about-story {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about-image {
+    width: 400px;
+    height: 480px;
+    flex-shrink: 0;
+    background-image: url('../Images/Product/product1_1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+/* Values section */
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 80px;
+    padding: 60px 0;
+    border-top: 1px solid #e0d8d0;
+    border-bottom: 1px solid #e0d8d0;
+}
+
+.value-card {
+    text-align: center;
+}
+
+.value-icon {
+    margin-bottom: 16px;
+}
+
+.value-card h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Closing section */
+.about-closing {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-closing h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-closing p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .about-hero {
+        height: 220px;
+    }
+
+    .about-hero-content h2 {
+        font-size: 24px;
+    }
+
+    .about-story {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-values {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}

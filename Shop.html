@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Luxe — Shop</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Shop.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Little Luxe</h1>
+        <p>Pre-loved designer baby clothing</p>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Shop.html">Shop</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <div class="shop-page">
+
+        <button class="filter-toggle" id="filterToggle">Show filters</button>
+
+        <div class="shop-toolbar">
+            <span id="itemCount">6 items</span>
+            <select id="sortSelect">
+                <option value="newest">Newest first</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+            </select>
+        </div>
+
+        <div class="shop-wrapper">
+
+            <aside class="filter-sidebar" id="filterSidebar">
+
+                <div class="filter-group">
+                    <h3>Size</h3>
+                    <div class="filter-pills">
+                        <button class="filter-pill" data-filter="size" data-value="50">50</button>
+                        <button class="filter-pill" data-filter="size" data-value="56">56</button>
+                        <button class="filter-pill" data-filter="size" data-value="62">62</button>
+                        <button class="filter-pill" data-filter="size" data-value="68">68</button>
+                        <button class="filter-pill" data-filter="size" data-value="74">74</button>
+                        <button class="filter-pill" data-filter="size" data-value="80">80</button>
+                        <button class="filter-pill" data-filter="size" data-value="86">86</button>
+                        <button class="filter-pill" data-filter="size" data-value="92">92</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Brand</h3>
+                    <div class="filter-pills">
+                        <button class="filter-pill" data-filter="brand" data-value="Bonpoint">Bonpoint</button>
+                        <button class="filter-pill" data-filter="brand" data-value="Jacadi">Jacadi</button>
+                        <button class="filter-pill" data-filter="brand" data-value="Petit Bateau">Petit Bateau</button>
+                        <button class="filter-pill" data-filter="brand" data-value="Ralph Lauren">Ralph Lauren</button>
+                        <button class="filter-pill" data-filter="brand" data-value="Marco Polo">Marco Polo</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price</h3>
+                    <div class="price-slider-wrapper">
+                        <div class="price-track">
+                            <div class="price-range-fill" id="rangeFill"></div>
+                        </div>
+                        <input type="range" id="priceMin" class="price-handle">
+                        <input type="range" id="priceMax" class="price-handle">
+                    </div>
+                    <div class="price-inputs">
+                        <input type="number" id="priceMinInput">
+                        <span>—</span>
+                        <input type="number" id="priceMaxInput">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Condition</h3>
+                    <div class="filter-pills">
+                        <button class="filter-pill" data-filter="condition" data-value="Like new">Like new</button>
+                        <button class="filter-pill" data-filter="condition" data-value="Excellent">Excellent</button>
+                        <button class="filter-pill" data-filter="condition" data-value="Very good">Very good</button>
+                    </div>
+                </div>
+
+                <button class="clear-filters" id="clearFilters">Clear all filters</button>
+
+            </aside>
+
+            <div class="shop-main">
+                <div class="shop-grid" id="shopGrid">
+
+                    <div class="product-card" data-size="62" data-brand="Bonpoint" data-price="45"
+                        data-condition="Excellent">
+                        <div class="product-image" style="background-image: url('Images/Product/product1_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product1_2.jpg')"></div>
+                        </div>
+                        <h3>Bonpoint wool coat</h3>
+                        <p class="size">Size 62</p>
+                        <p class="condition">Condition: excellent</p>
+                        <p class="price">€ 45</p>
+                        <a href="Product.html?id=1" class="card-button">View item</a>
+                    </div>
+
+                    <div class="product-card" data-size="74" data-brand="Jacadi" data-price="32"
+                        data-condition="Like new">
+                        <div class="product-image" style="background-image: url('Images/Product/product2_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product2_2.jpg')"></div>
+                        </div>
+                        <h3>Jacadi floral dress</h3>
+                        <p class="size">Size 74</p>
+                        <p class="condition">Condition: like new</p>
+                        <p class="price">€ 32</p>
+                        <a href="Product.html?id=2" class="card-button">View item</a>
+                    </div>
+
+                    <div class="product-card" data-size="56" data-brand="Petit Bateau" data-price="28"
+                        data-condition="Very good">
+                        <div class="product-image" style="background-image: url('Images/Product/product3_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product3_2.jpg')"></div>
+                        </div>
+                        <h3>Petit Bateau set</h3>
+                        <p class="size">Size 56</p>
+                        <p class="condition">Condition: very good</p>
+                        <p class="price">€ 28</p>
+                        <a href="Product.html?id=3" class="card-button">View item</a>
+                    </div>
+
+                    <div class="product-card" data-size="80" data-brand="Ralph Lauren" data-price="55"
+                        data-condition="Like new">
+                        <div class="product-image" style="background-image: url('Images/Product/product1_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product1_2.jpg')"></div>
+                        </div>
+                        <h3>Ralph Lauren dress</h3>
+                        <p class="size">Size 80</p>
+                        <p class="condition">Condition: like new</p>
+                        <p class="price">€ 55</p>
+                        <a href="Product.html?id=4" class="card-button">View item</a>
+                    </div>
+
+                    <div class="product-card" data-size="86" data-brand="Marco Polo" data-price="38"
+                        data-condition="Excellent">
+                        <div class="product-image" style="background-image: url('Images/Product/product2_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product2_2.jpg')"></div>
+                        </div>
+                        <h3>Marco Polo cardigan</h3>
+                        <p class="size">Size 86</p>
+                        <p class="condition">Condition: excellent</p>
+                        <p class="price">€ 38</p>
+                        <a href="Product.html?id=5" class="card-button">View item</a>
+                    </div>
+
+                    <div class="product-card" data-size="68" data-brand="Jacadi" data-price="42"
+                        data-condition="Very good">
+                        <div class="product-image" style="background-image: url('Images/Product/product3_1.jpg')">
+                            <div class="img-hover" style="background-image: url('Images/Product/product3_2.jpg')"></div>
+                        </div>
+                        <h3>Jacadi romper</h3>
+                        <p class="size">Size 68</p>
+                        <p class="condition">Condition: very good</p>
+                        <p class="price">€ 42</p>
+                        <a href="Product.html?id=6" class="card-button">View item</a>
+                    </div>
+
+                </div>
+
+                <p class="no-results" id="noResults" style="display:none;">No items match your filters.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us at hello@littleluxe.nl</p>
+    </footer>
+
+    <script src="JS/Shop.js"></script>
+
+</body>
+
+</html>

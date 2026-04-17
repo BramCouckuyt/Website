@@ -1,0 +1,137 @@
+/* Contact layout */
+.contact-wrapper {
+    display: flex;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* Contact info */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0d8d0;
+}
+
+.info-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 15px;
+    color: #2c2c2c;
+}
+
+/* Contact form */
+.contact-form-wrapper {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e0d8d0;
+    background: #fff;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    color: #2c2c2c;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c2c2c;
+}
+
+.form-group textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #2c2c2c;
+    color: #faf8f5;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #b0a090;
+}
+
+/* Confirmation */
+.contact-confirmation {
+    padding: 40px;
+    background: #f5f2ee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-confirmation h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.contact-confirmation p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px auto;
+    }
+}
